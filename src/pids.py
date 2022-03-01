@@ -35,6 +35,7 @@ class BaseConverter(object):
 
         # make an integer out of the number
         x = 0
+
         for digit in str(number):
             x = x * len(fromdigits) + fromdigits.index(digit)
 
@@ -59,8 +60,9 @@ class BaseConverter(object):
 #     '0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz'
 # )
 
+pid = BaseConverter("0123456789ABCDEF")
+
 if __name__ == "__main__":
-    base20 = BaseConverter('0123456789abcdefghij')
-    print(base20)
-    print(base20.from_int(1234))
-    print(base20.to_int('31e'))
+    print(pid)
+    print(pid.from_int(1234))
+    print(pid.to_int("f"))

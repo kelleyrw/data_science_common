@@ -18,16 +18,27 @@ install:
 # test
 # ---------------------------------------------------------------------------- #
 
-#backend-test:
-#	pytest --tb=short $$(find ./services/search/* -name '*.py')
-#
-#flake8:
-#	flake8 --config .flake8 $$(find ./services/search/* -name '*.py')
-#
-#black:
-#	black $$(find ./services/search/* -name '*.py') --check
-#
-#isort:
-#	isort --profile="black" $$(find ./services/search/* -name '*.py') --check-only
-#
-#all: flake8 black isort backend-test
+test:
+	pytest $$(find ./src -name '*.py')
+
+black:
+	black --config .flake8 $$(find ./src -name '*.py') --check
+
+isort:
+	isort --profile="black" $$(find ./src -name '*.py') --check-only
+
+all: black isort test
+
+# ---------------------------------------------------------------------------- #
+# release
+# ---------------------------------------------------------------------------- #
+
+build:
+	rm -r $$PROJECT_DIR/dist
+	python -m build
+
+deploy-test-pypi: build
+	twine upload --verbose --repository testpypi dist/*
+
+deploy-pypi: build
+	twine upload --verbose dist/*

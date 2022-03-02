@@ -13,7 +13,7 @@ def get_long_description():
 
 setup(
     name="data_science_common",
-    version="0.1.3",
+    version="0.1.4",
     description="UNDER CONSTRUCTION: A simple python library for facilitating analysis",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",

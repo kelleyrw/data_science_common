@@ -2,7 +2,7 @@ name: Pre-Release Python Package
 
 on:
   release:
-    types: [ prereleased ]
+    types: [ created ]
 
 jobs:
   test:

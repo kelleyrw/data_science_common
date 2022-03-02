@@ -27,7 +27,7 @@ black:
 isort:
 	isort --profile="black" $$(find ./src -name '*.py') --check-only
 
-all: black isort test
+all: black isort tests
 
 # ---------------------------------------------------------------------------- #
 # release

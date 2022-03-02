@@ -1,13 +1,5 @@
 """
-================================================================================
-module: dsc.util.date
-================================================================================
 
-A collection of unitlity functions for date and time manipulation
-
-.. code-block:: python
-
-  from dsc.util.date import <method_name>
 """
 import datetime as dt
 
@@ -20,9 +12,16 @@ def is_valid_datetime(value: str, format: str = "%Y-%m-%d %H:%M:%S") -> bool:
     """
     Determine if string value represents valid datetime.
 
-    :param value: string to test
-    :param format: format to validate against
-    :return: bool
+    Parameters
+    ----------
+    value : str
+        string to test
+    format :  str
+        format to validate against
+
+    Returns
+    -------
+    bool
     """
     try:
         dt.datetime.strptime(value, format)

@@ -30,15 +30,25 @@ isort:
 all: black isort tests
 
 # ---------------------------------------------------------------------------- #
+# document
+# ---------------------------------------------------------------------------- #
+
+build-docs:
+	pushd $$PROJECT_DIR/docs &&\
+		sphinx-apidoc -f -o source/ ../dsc &&\
+		make html &&\
+		popd
+
+# ---------------------------------------------------------------------------- #
 # release
 # ---------------------------------------------------------------------------- #
 
-build:
+build-dist:
 	rm -r $$PROJECT_DIR/dist
 	python -m build
 
-deploy-test-pypi: build
+deploy-test-pypi: build-dist
 	twine upload --verbose --repository testpypi dist/*
 
-deploy-pypi: build
+deploy-pypi: build_dist
 	twine upload --verbose dist/*

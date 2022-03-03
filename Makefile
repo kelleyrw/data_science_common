@@ -43,12 +43,15 @@ build-docs:
 # release
 # ---------------------------------------------------------------------------- #
 
-build-dist:
-	rm -r $$PROJECT_DIR/dist
+clean-dist:
+	if [ -d $$PROJECT_DIR/dist ]; then rm -rf $$PROJECT_DIR/dist; fi
+	if [ -d $$PROJECT_DIR/data_science_common.egg-info ]; then rm -rf $$PROJECT_DIR/data_science_common.egg-info; fi
+
+build-dist: clean-dist
 	python -m build
 
 deploy-test-pypi: build-dist
 	twine upload --verbose --repository testpypi dist/*
 
-deploy-pypi: build_dist
+deploy-pypi: build-dist
 	twine upload --verbose dist/*

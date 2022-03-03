@@ -2,21 +2,22 @@
 Welcome to Data Science Common's documentation!
 ##################################################
 
-This document contains all the functions available
-in core that are available. See changelog for version information.
+**Data Science Common** is simple Python library for facilitating analysis.
+
+.. note::
+
+   This project is under active development and has not been released yet.
 
 .. contents:: Table of Contents
    :depth: 4
 
-Releases and Changes
+Contents
 ====================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 4
 
-   readme
-   changelog
-
+   modules
 
 Indices and tables
 ==================

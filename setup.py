@@ -3,6 +3,8 @@ import os
 import setuptools
 from setuptools import setup
 
+import dsc
+
 
 def get_long_description():
     with open(
@@ -11,19 +13,30 @@ def get_long_description():
         return fp.read()
 
 
+def get_version():
+    version = (dsc.get_version(),)
+    return version
+
+
 setup(
     name="data_science_common",
-    version="0.1.4",
+    version=get_version(),
     description="UNDER CONSTRUCTION: A simple python library for facilitating analysis",
     long_description=get_long_description(),
     long_description_content_type="text/markdown",
     author="Ryan Kelley",
     url="https://github.com/kelleyrw/data_science_common",
     license="Apache License, Version 2.0",
-    py_modules=["dsc"],
+    project_urls={
+        # "Documentation": "https://packaging.python.org/tutorials/distributing-packages/",
+        "Funding": "https://donate.pypi.org",
+        "Source": f"https://github.com/kelleyrw/data_science_common/{get_version()}",
+        "Tracker": "https://github.com/kelleyrw/data_science_common/issues",
+    },
+    # py_modules=[], # stand-alone modules
     extras_require={"test": ["pytest"]},
     package_dir={"": "."},
-    packages=setuptools.find_packages(where="."),
+    packages=setuptools.find_packages(include=["dsc", "dsc.*"]),
     install_requires=[
         # "boto3==1.11.13",
         # "paramiko==2.7.1",
@@ -43,6 +56,16 @@ setup(
         # "pandas-gbq",
         # "pyarrow",
         # "gcsfs",
+    ],
+    classifiers=[
+        "Development Status :: 2 - Pre-Alpha",
+        "Intended Audience :: Science/Research",
+        "Topic :: Scientific/Engineering",
+        "License :: OSI Approved :: Apache Software License",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
     ],
     python_requires=">=3.7",
 )

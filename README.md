@@ -39,6 +39,8 @@ make install
 
 ## Release History
 
+* 0.1.5
+  * CHANGE: added package `dsc.util.date` 
 * 0.1.4
   * CHANGE: adding CI/CD 
 * 0.1
@@ -67,3 +69,9 @@ Distributed under the Apache License, Version 2.0. See ``LICENSE`` for more info
 [travis-image]: https://img.shields.io/travis/dbader/node-datadog-metrics/master.svg?style=flat-square
 [travis-url]: https://travis-ci.org/dbader/node-datadog-metrics
 [wiki]: https://github.com/yourname/yourproject/wiki
+
+### requirements for development
+
+* black
+* isort
+* pandoc

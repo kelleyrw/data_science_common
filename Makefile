@@ -18,16 +18,16 @@ install:
 # test
 # ---------------------------------------------------------------------------- #
 
-test:
-	pytest $$(find ./src -name '*.py')
+pytest:
+	pytest $$(find ./dsc -name '*.py')
 
 black:
-	black --config .flake8 $$(find ./src -name '*.py') --check
+	black --config .flake8 $$(find ./dsc -name '*.py') --check
 
 isort:
-	isort --profile="black" $$(find ./src -name '*.py') --check-only
+	isort --profile="black" $$(find ./dsc -name '*.py') --check-only
 
-all: black isort tests
+test: black isort pytest
 
 # ---------------------------------------------------------------------------- #
 # document

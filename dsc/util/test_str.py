@@ -50,5 +50,6 @@ def test_zeros_to_none():
 
 
 def test_list_to_sql_str():
+    assert list_to_sql_str([]) == "()"
     assert list_to_sql_str([1, 2]) == "(1, 2)"
     assert list_to_sql_str(["foo", "bar"]) == "('foo', 'bar')"

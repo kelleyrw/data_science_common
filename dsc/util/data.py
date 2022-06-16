@@ -10,13 +10,13 @@ __all__ = [
 
 
 def list_contains_type(
-    value: Iterable[Any], test_type: type, require_non_empty: bool = False
+    values: Iterable[Any], test_type: type, require_non_empty: bool = False
 ) -> bool:
     """
     Determine if a list contains the given type.
 
     Args:
-        value (): list or numpy array to test
+        values (): list or numpy array to test
         test_type (): python type to test
         require_non_empty ():
             True: empty list returns False
@@ -26,12 +26,12 @@ def list_contains_type(
         boolean
     """
 
-    if isinstance(value, numpy.ndarray):
-        value = value.tolist()
+    if isinstance(values, numpy.ndarray):
+        values = values.tolist()
 
-    result = isinstance(value, Iterable) and all(
-        isinstance(i, test_type) for i in value
+    result = isinstance(values, Iterable) and all(
+        isinstance(i, test_type) for i in values
     )
     if require_non_empty:
-        result = result and len(value) > 0
+        result = result and len(list(values)) > 0
     return result

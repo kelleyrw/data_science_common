@@ -1,4 +1,6 @@
-from typing import Optional
+from typing import Any, List, Optional
+
+from dsc.util.data import list_contains_type
 
 # fmt: off
 __all__ = [
@@ -94,12 +96,12 @@ def bool_or_none(value: str, true_value: str, false_value: str) -> Optional[bool
     Returns:
         Optional[bool]
     """
-    value = empty_to_none(value)
-    if value is None:
+    result = empty_to_none(value)
+    if result is None:
         return None
-    elif value == true_value:
+    elif result == true_value:
         return True
-    elif value == false_value:
+    elif result == false_value:
         return False
     else:
         return None
@@ -116,14 +118,13 @@ def zeros_to_none(value: str) -> Optional[int]:
         Optional[int]
     """
     if value.isdigit():
-        result = int(value)
-        result = None if result == 0 else result
+        result = None if int(value) == 0 else int(value)
         return result
     else:
         return None
 
 
-def list_to_sql_str(values: list) -> str:
+def list_to_sql_str(values: List[Any]) -> str:
     """
     covert a list to a sql compliant list.
     e.g. [1, 3, 4] -> "(1, 2, 3)"
@@ -135,10 +136,8 @@ def list_to_sql_str(values: list) -> str:
     Returns:
         str
     """
-
-    if all(isinstance(i, str) for i in values):
-        str_type = type(values[0]) if len(values) > 0 else str
-        items_str = ["'%s'" % str_type(s).replace("'", "''") for s in values]
+    if list_contains_type(values, str):
+        items_str = ["'%s'" % str(s).replace("'", "''") for s in values]
     else:
         items_str = [str(s) for s in values]
     result = "(%s)" % ", ".join(items_str)

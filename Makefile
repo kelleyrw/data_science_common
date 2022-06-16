@@ -30,7 +30,10 @@ black:
 isort:
 	isort --profile="black" $$(find ./dsc -name '*.py') --check-only
 
-test: black isort pytest
+mypy:
+	mypy --ignore-missing-imports --show-error-codes $$(find ./dsc -name '*.py')
+
+test: black isort mypy pytest
 
 # ---------------------------------------------------------------------------- #
 # document

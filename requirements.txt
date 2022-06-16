@@ -8,6 +8,7 @@ sqlalchemy
 tabulate
 sqlparse
 ipython
+mypy
 # pypandoc==1.7.2
 #sphinx-pypi-upload==0.2.1
 

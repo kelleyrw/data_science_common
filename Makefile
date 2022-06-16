@@ -2,11 +2,14 @@
 # setup
 # ---------------------------------------------------------------------------- #
 
+python_version = 3.10.4
+python_env = dsc3104
+
 setup:
-	pyenv install --skip-existing 3.10.2 &&\
-		pyenv uninstall -f dsc &&\
-		pyenv virtualenv --force 3.10.2 dsc &&\
-		pyenv local dsc &&\
+	pyenv install --skip-existing $(python_version) &&\
+		pyenv uninstall -f $(python_env) &&\
+		pyenv virtualenv --force $(python_version) $(python_env) &&\
+		pyenv local $(python_env) &&\
 		pip install --upgrade pip &&\
 		pip install -r requirements.txt
 

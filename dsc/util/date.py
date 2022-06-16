@@ -5,6 +5,7 @@ import pandas as pd
 
 from dsc.util.error import InvalidArgumentError
 
+# fmt: off
 __all__ = [
     "is_valid_datetime",
     "is_valid_date",
@@ -18,6 +19,7 @@ __all__ = [
     "to_datetime",
     "date_range",
 ]
+# fmt: on
 
 
 def str_to_datetime(s: str, fmt: str = "%Y-%m-%d %H:%M:%S") -> dt.datetime:
@@ -25,8 +27,8 @@ def str_to_datetime(s: str, fmt: str = "%Y-%m-%d %H:%M:%S") -> dt.datetime:
     Convert a string object to a datetime.
 
     Args:
-        s (str): string to convert
-        fmt (str): format to use for conversion
+        s: string to convert
+        fmt: format to use for conversion
 
     Returns:
         datetime
@@ -42,8 +44,8 @@ def str_to_date(s: str, fmt: str = "%Y-%m-%d") -> dt.date:
     Convert a string object to a date.
 
     Args:
-        s (str): string to convert
-        fmt (str): format to use for conversion
+        s: string to convert
+        fmt: format to use for conversion
 
     Returns:
         date
@@ -56,8 +58,8 @@ def datetime_to_str(d: dt.datetime, fmt: str = "%Y-%m-%d %H:%M:%S") -> str:
     Convert a datetime object to a string.
 
     Args:
-        d (datetime): datetime to convert
-        fmt (str): format to use for the conversion
+        d: datetime to convert
+        fmt: format to use for the conversion
 
     Returns:
         output string
@@ -73,8 +75,8 @@ def date_to_str(d: dt.date, fmt: str = "%Y-%m-%d") -> str:
     Convert a date object to a string.
 
     Args:
-        d (date): date to convert
-        fmt (str): format to use for the conversion
+        d: date to convert
+        fmt: format to use for the conversion
 
     Returns:
         output string
@@ -88,8 +90,8 @@ def is_valid_datetime(s: str, fmt: str = "%Y-%m-%d %H:%M:%S") -> bool:
     Determine if string represents valid datetime.
 
     Args:
-        s (str): string to test
-        fmt (str): format to validate against
+        s: string to test
+        fmt: format to validate against
 
     Returns:
         bool
@@ -106,8 +108,8 @@ def is_valid_date(s: str, fmt: str = "%Y-%m-%d") -> bool:
     Determine if string represents valid date.
 
     Args:
-        s (str): string to test
-        fmt (str): format to validate against
+        s: string to test
+        fmt: format to validate against
 
     Returns:
         bool
@@ -124,7 +126,7 @@ def date_to_datetime(d: dt.date) -> dt.datetime:
     Convert a date object to a datetime object.
 
     Args:
-        d (date): date to convert
+        d: date to convert
 
     Returns:
         datetime
@@ -134,20 +136,18 @@ def date_to_datetime(d: dt.date) -> dt.datetime:
 
 
 def to_datetime(
-    v: Union[str, dt.date, dt.datetime], fmt: str = "%Y-%m-%d %H:%M:%S"
+    v: Union[str, dt.date, dt.datetime, pd.Timestamp], fmt: str = "%Y-%m-%d %H:%M:%S"
 ) -> dt.date:
     """
     Cast an object is a datetime.
 
     Args:
-        v (str/date/datetime): value to convert
-        fmt (str): format to use for the conversion
+        v: value to convert
+        fmt: format to use for the conversion
 
     Returns:
         datetime
     """
-    import pandas as pd
-
     if isinstance(v, str):
         if is_valid_datetime(v, fmt):
             v = str_to_datetime(v, fmt)
@@ -171,8 +171,8 @@ def to_date(v: Union[str, dt.date, dt.datetime], fmt: str = "%Y-%m-%d") -> dt.da
     Cast an object is a date.
 
     Args:
-        v (str/date/datetime): value to convert
-        fmt (str): format to use for the conversion
+        v: value to convert
+        fmt: format to use for the conversion
 
     Returns:
         date
@@ -199,8 +199,8 @@ def to_str(v: Union[str, dt.date, dt.datetime], fmt: str = "%Y-%m-%d") -> str:
     Cast an object is a string.
 
     Args:
-        v (str/date/datetime): value to convert
-        fmt (str): format to use for the conversion
+        v : value to convert
+        fmt: format to use for the conversion
 
     Returns:
         output string
@@ -222,15 +222,13 @@ def date_range(
     Create a list of dates between begin and end dates.
 
     Args:
-        begin_date (date): range begin date
-        end_date (date): range end date
-        freq (str):  frequency of range (default is daily: 'D')
+        begin_date: range begin date
+        end_date: range end date
+        freq:  frequency of range (default is daily: 'D')
 
     Returns:
         list of dates from begin to end
     """
-    import pandas as pd
-
     result = [
         t.to_pydatetime().date() for t in pd.date_range(begin_date, end_date, freq=freq)
     ]

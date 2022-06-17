@@ -42,6 +42,7 @@ setup(
         "sqlparse>=0.4.2",
         "pandas>=1.4.2",
         "SQLAlchemy>=1.4.37",
+        "ipython>=8.4.0",
         # "boto3==1.11.13",
         # "paramiko==2.7.1",
         # "sqlparse==0.3.0",

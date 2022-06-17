@@ -40,6 +40,8 @@ setup(
     install_requires=[
         "tabulate>=0.8",
         "sqlparse>=0.4.2",
+        "pandas>=1.4.2",
+        "SQLAlchemy>=1.4.37",
         # "boto3==1.11.13",
         # "paramiko==2.7.1",
         # "sqlparse==0.3.0",

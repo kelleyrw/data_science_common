@@ -1,7 +1,6 @@
 import os
 
-import setuptools
-from setuptools import setup
+from setuptools import find_packages, setup
 
 import dsc
 
@@ -14,7 +13,7 @@ def get_long_description():
 
 
 def get_version():
-    version = (dsc.get_version(),)
+    version = dsc.get_version()
     return version
 
 
@@ -36,7 +35,7 @@ setup(
     # py_modules=[], # stand-alone modules
     extras_require={"test": ["pytest"]},
     package_dir={"": "."},
-    packages=setuptools.find_packages(include=["dsc", "dsc.*"]),
+    packages=find_packages(include=["dsc", "dsc.*"]),
     install_requires=[
         "tabulate>=0.8",
         "sqlparse>=0.4.2",

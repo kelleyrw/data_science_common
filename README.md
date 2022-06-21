@@ -41,6 +41,11 @@ make install
 
 * 0.1.5
   * CHANGE: added package `dsc.util.date` 
+  * CHANGE: added package `dsc.util.db`
+  * CHANGE: added package `dsc.util.error`
+  * CHANGE: added package `dsc.util.obj`
+  * CHANGE: added package `dsc.util.pd`
+  * CHANGE: added package `dsc.util.str`
 * 0.1.4
   * CHANGE: adding CI/CD 
 * 0.1

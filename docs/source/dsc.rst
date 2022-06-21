@@ -12,8 +12,6 @@ Subpackages
 Submodules
 ----------
 
-dsc.version module
-------------------
 
 .. automodule:: dsc.version
    :members:

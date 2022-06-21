@@ -1,143 +1,659 @@
-
 <!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
-
-    <title>dsc.util package &#8212; Data Science Common https://github.com/kelleyrw/data_science_common documentation</title>
-    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
-    <link rel="stylesheet" type="text/css" href="_static/sphinxdoc.css" />
-    <link rel="stylesheet" type="text/css" href="_static/graphviz.css" />
-    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
-    <script src="_static/jquery.js"></script>
-    <script src="_static/underscore.js"></script>
-    <script src="_static/doctools.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>dsc.util package &mdash; Data Science Common https://github.com/kelleyrw/data_science_common documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+    <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="prev" title="dsc package" href="dsc.html" /> 
-  </head><body>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             accesskey="I">index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="dsc.html" title="dsc package"
-             accesskey="P">previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Data Science Common https://github.com/kelleyrw/data_science_common documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="modules.html" >dsc</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="dsc.html" accesskey="U">dsc package</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">dsc.util package</a></li> 
-      </ul>
-    </div>  
+</head>
 
-    <div class="document">
-      <div class="documentwrapper">
-        <div class="bodywrapper">
-          <div class="body" role="main">
-            
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+            <a href="index.html" class="icon icon-home"> Data Science Common
+          </a>
+              <div class="version">
+                0.1.5.dev1
+              </div>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">dsc</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="dsc.html">dsc package</a><ul class="current">
+<li class="toctree-l3 current"><a class="reference internal" href="dsc.html#subpackages">Subpackages</a><ul class="current">
+<li class="toctree-l4 current"><a class="current reference internal" href="#">dsc.util package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="dsc.html#module-dsc.version">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="dsc.html#module-dsc">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Data Science Common</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home"></a> &raquo;</li>
+          <li><a href="modules.html">dsc</a> &raquo;</li>
+          <li><a href="dsc.html">dsc package</a> &raquo;</li>
+      <li>dsc.util package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/dsc.util.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
   <section id="dsc-util-package">
-<h1>dsc.util package<a class="headerlink" href="#dsc-util-package" title="Permalink to this headline">¶</a></h1>
-<section id="submodules">
-<h2>Submodules<a class="headerlink" href="#submodules" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="module-dsc.util.date">
-<span id="dsc-util-date-module"></span><h2>dsc.util.date module<a class="headerlink" href="#module-dsc.util.date" title="Permalink to this headline">¶</a></h2>
+<h1>dsc.util package<a class="headerlink" href="#dsc-util-package" title="Permalink to this headline"></a></h1>
+<section id="module-dsc.util.data">
+<span id="submodules"></span><h2>Submodules<a class="headerlink" href="#module-dsc.util.data" title="Permalink to this headline"></a></h2>
 <dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.date.is_valid_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">is_valid_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">format</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.date.is_valid_datetime" title="Permalink to this definition">¶</a></dt>
-<dd><p>Determine if string value represents valid datetime.</p>
+<dt class="sig sig-object py" id="dsc.util.data.list_contains_type">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.data.</span></span><span class="sig-name descname"><span class="pre">list_contains_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">require_non_empty</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.data.list_contains_type" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if a list contains the given type.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>value</strong> (<em>str</em>) – string to test</p></li>
-<li><p><strong>format</strong> (<em>str</em>) – format to validate against</p></li>
+<li><p><strong>values</strong> – list or numpy array to test</p></li>
+<li><p><strong>test_type</strong> – python type to test</p></li>
+<li><p><strong>require_non_empty</strong> – True: empty list returns False, False: empty list returns True (default)</p></li>
 </ul>
 </dd>
-<dt class="field-even">Return type</dt>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.date"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.date_range">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'D'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime.date</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.date.date_range" title="Permalink to this definition"></a></dt>
+<dd><p>Create a list of dates between begin and end dates.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>begin_date</strong> – range begin date</p></li>
+<li><p><strong>end_date</strong> – range end date</p></li>
+<li><p><strong>freq</strong> – frequency of range (default is daily: ‘D’)</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>list of dates from begin to end</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.date_to_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.datetime</span></span></span><a class="headerlink" href="#dsc.util.date.date_to_datetime" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a date object to a datetime object.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>d</strong> – date to convert</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.date_to_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.date_to_str" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a date object to a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>d</strong> – date to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for the conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.datetime_to_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">datetime_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.datetime_to_str" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a datetime object to a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>d</strong> – datetime to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for the conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.is_valid_date">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">is_valid_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.date.is_valid_date" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if string represents valid date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – string to test</p></li>
+<li><p><strong>fmt</strong> – format to validate against</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
 <dd class="field-even"><p>bool</p>
 </dd>
 </dl>
 </dd></dl>
 
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.is_valid_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">is_valid_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.date.is_valid_datetime" title="Permalink to this definition"></a></dt>
+<dd><p>Determine if string represents valid datetime.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – string to test</p></li>
+<li><p><strong>fmt</strong> – format to validate against</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>bool</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.str_to_date">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">str_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.date</span></span></span><a class="headerlink" href="#dsc.util.date.str_to_date" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a string object to a date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – string to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.str_to_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">str_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.datetime</span></span></span><a class="headerlink" href="#dsc.util.date.str_to_datetime" title="Permalink to this definition"></a></dt>
+<dd><p>Convert a string object to a datetime.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>s</strong> – string to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.to_date">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.date</span></span></span><a class="headerlink" href="#dsc.util.date.to_date" title="Permalink to this definition"></a></dt>
+<dd><p>Cast an object is a date.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v</strong> – value to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for the conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>date</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.to_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">pandas._libs.tslibs.timestamps.Timestamp</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.date</span></span></span><a class="headerlink" href="#dsc.util.date.to_datetime" title="Permalink to this definition"></a></dt>
+<dd><p>Cast an object is a datetime.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v</strong> – value to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for the conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>datetime</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.date.to_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.to_str" title="Permalink to this definition"></a></dt>
+<dd><p>Cast an object is a string.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>v</strong> – value to convert</p></li>
+<li><p><strong>fmt</strong> – format to use for the conversion</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>output string</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.db"></span><dl class="py class">
+<dt class="sig sig-object py" id="dsc.util.db.RunQuery">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.db.</span></span><span class="sig-name descname"><span class="pre">RunQuery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sqlalchemy.engine.base.Engine</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.db.RunQuery" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<blockquote>
+<div><p>Wrapper to run a SQL from pandas so that the engine is encapsulated.</p>
+<p>This is to alleviate constantly passing in the engine. For Example:</p>
+</div></blockquote>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">engine</span> <span class="o">=</span> <span class="n">create_engine</span><span class="p">(</span><span class="s2">&quot;sqlite://&quot;</span><span class="p">)</span>
+<span class="n">run_sql</span> <span class="o">=</span> <span class="n">RunQuery</span><span class="p">(</span><span class="n">engine</span><span class="p">)</span>
+<span class="n">df1</span> <span class="o">=</span> <span class="n">run_sql</span><span class="p">(</span><span class="s2">&quot;select 1 as foo&quot;</span><span class="p">)</span>
+<span class="n">df2</span> <span class="o">=</span> <span class="n">run_sql</span><span class="p">(</span><span class="s2">&quot;select 2 as foo&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.error"></span><dl class="py exception">
+<dt class="sig sig-object py" id="dsc.util.error.DatabaseError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.error.</span></span><span class="sig-name descname"><span class="pre">DatabaseError</span></span><a class="headerlink" href="#dsc.util.error.DatabaseError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RuntimeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="dsc.util.error.InvalidArgumentError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.error.</span></span><span class="sig-name descname"><span class="pre">InvalidArgumentError</span></span><a class="headerlink" href="#dsc.util.error.InvalidArgumentError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RuntimeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="dsc.util.error.MissingColumnsError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.error.</span></span><span class="sig-name descname"><span class="pre">MissingColumnsError</span></span><a class="headerlink" href="#dsc.util.error.MissingColumnsError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RuntimeError</span></code></p>
+</dd></dl>
+
+<dl class="py exception">
+<dt class="sig sig-object py" id="dsc.util.error.NoDataError">
+<em class="property"><span class="pre">exception</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.error.</span></span><span class="sig-name descname"><span class="pre">NoDataError</span></span><a class="headerlink" href="#dsc.util.error.NoDataError" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">RuntimeError</span></code></p>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.obj"></span><dl class="py class">
+<dt class="sig sig-object py" id="dsc.util.obj.StructLikeREPR">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.obj.</span></span><span class="sig-name descname"><span class="pre">StructLikeREPR</span></span><a class="headerlink" href="#dsc.util.obj.StructLikeREPR" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.obj.classproperty">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.obj.</span></span><span class="sig-name descname"><span class="pre">classproperty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">func</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.obj.classproperty" title="Permalink to this definition"></a></dt>
+<dd><p>decorator to define a class level property</p>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.pd"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.pd.print_dataframe">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.pd.</span></span><span class="sig-name descname"><span class="pre">print_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#dsc.util.pd.print_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Prints a nicely formatted table for a pandas dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>DataFrame</em>) – the dataframe to print</p></li>
+<li><p><strong>nrows</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the number of rows to display</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.pd.tabulate_dataframe">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.pd.</span></span><span class="sig-name descname"><span class="pre">tabulate_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.pd.tabulate_dataframe" title="Permalink to this definition"></a></dt>
+<dd><p>Creates a nicely formatted string/tables for a pandas dataframe</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>df</strong> (<em>DataFrame</em>) – the dataframe to print</p></li>
+<li><p><strong>nrows</strong> (<em>Optional</em><em>[</em><em>int</em><em>]</em>) – the number of rows to display</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>formatted dataframe sting-based output</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.str"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.bool_or_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">bool_or_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">true_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">false_value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">bool</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.str.bool_or_none" title="Permalink to this definition"></a></dt>
+<dd><p>returns bool based on true_value and false_value; else returns None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>(</strong><strong>)</strong> (<em>false_value</em>) – string to check</p></li>
+<li><p><strong>(</strong><strong>)</strong> – string to compare for True</p></li>
+<li><p><strong>(</strong><strong>)</strong> – string to compare for False</p></li>
+</ul>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Optional[bool]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.empty">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.str.empty" title="Permalink to this definition"></a></dt>
+<dd><p>determine if a string is empty</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>value</em>) – string to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.empty_to_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">empty_to_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.str.empty_to_none" title="Permalink to this definition"></a></dt>
+<dd><p>returns value if the string is not empty, else returns None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>value</em>) – string to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Optional[str]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.int_or_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">int_or_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.str.int_or_none" title="Permalink to this definition"></a></dt>
+<dd><p>returns int if value contains digits, else returns None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>value</em>) – string to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Optional[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.list_to_sql_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">list_to_sql_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.str.list_to_sql_str" title="Permalink to this definition"></a></dt>
+<dd><p>covert a list to a sql compliant list.
+e.g. [1, 3, 4] -&gt; “(1, 2, 3)”
+e.g. [‘foo’, ‘bar’] -&gt; “(‘foo’, ‘bar’)”</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>values</em>) – list to convert</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.not_empty">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">not_empty</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.str.not_empty" title="Permalink to this definition"></a></dt>
+<dd><p>determine if a string is NOT empty</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>value</em>) – string to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>boolean</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.strip_newline">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">strip_newline</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.str.strip_newline" title="Permalink to this definition"></a></dt>
+<dd><p>strips the newline characters from the end of a string</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>line</em>) – string to check</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>str</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.str.zeros_to_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.str.</span></span><span class="sig-name descname"><span class="pre">zeros_to_none</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">value</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.str.zeros_to_none" title="Permalink to this definition"></a></dt>
+<dd><p>returns int if non-zero, else returns None</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p><strong>(</strong><strong>)</strong> (<em>value</em>) – string to extract zeros</p>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><p>Optional[int]</p>
+</dd>
+</dl>
+</dd></dl>
+
+<span class="target" id="module-dsc.util.test_data"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_data.test_list_contains_type">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_data.</span></span><span class="sig-name descname"><span class="pre">test_list_contains_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_data.test_list_contains_type" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-dsc.util.test_date"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.pset">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">pset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.pset" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_date_range">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_date_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_date_range" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_date_to_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_date_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_date_to_datetime" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_date_to_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_date_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_date_to_str" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_datetime_to_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_datetime_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_datetime_to_str" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_is_valid_date">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_is_valid_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_is_valid_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_is_valid_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_is_valid_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_is_valid_datetime" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_str_to_date">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_str_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_str_to_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_str_to_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_str_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_str_to_datetime" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_to_date">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_to_date" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_to_datetime">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_to_datetime" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_date.test_to_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_to_str" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-dsc.util.test_db"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_db.test_RunQuery">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_db.</span></span><span class="sig-name descname"><span class="pre">test_RunQuery</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_db.test_RunQuery" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-dsc.util.test_obj"></span><dl class="py class">
+<dt class="sig sig-object py" id="dsc.util.test_obj.TestObj">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.test_obj.</span></span><span class="sig-name descname"><span class="pre">TestObj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_obj.TestObj" title="Permalink to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="dsc.util.test_obj.TestObj.test_StructLikeREPR">
+<span class="sig-name descname"><span class="pre">test_StructLikeREPR</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_obj.TestObj.test_StructLikeREPR" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<span class="target" id="module-dsc.util.test_pd"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_pd.test_print_dataframe">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_pd.</span></span><span class="sig-name descname"><span class="pre">test_print_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_pd.test_print_dataframe" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_pd.test_tabluate">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_pd.</span></span><span class="sig-name descname"><span class="pre">test_tabluate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_pd.test_tabluate" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<span class="target" id="module-dsc.util.test_str"></span><dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_bool_or_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_bool_or_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_bool_or_none" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_empty_to_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_empty_to_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_empty_to_none" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_int_or_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_int_or_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_int_or_none" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_is_empty">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_is_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_is_empty" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_is_not_empty">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_is_not_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_is_not_empty" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_list_to_sql_str">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_list_to_sql_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_list_to_sql_str" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_strip_newline">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_strip_newline</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_strip_newline" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py function">
+<dt class="sig sig-object py" id="dsc.util.test_str.test_zeros_to_none">
+<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_zeros_to_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_zeros_to_none" title="Permalink to this definition"></a></dt>
+<dd></dd></dl>
+
 </section>
 <section id="module-dsc.util">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dsc.util" title="Permalink to this headline">¶</a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dsc.util" title="Permalink to this headline"></a></h2>
 </section>
 </section>
 
 
-            <div class="clearer"></div>
+           </div>
           </div>
-        </div>
-      </div>
-      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
-        <div class="sphinxsidebarwrapper">
-  <div>
-    <h3><a href="index.html">Table of Contents</a></h3>
-    <ul>
-<li><a class="reference internal" href="#">dsc.util package</a><ul>
-<li><a class="reference internal" href="#submodules">Submodules</a></li>
-<li><a class="reference internal" href="#module-dsc.util.date">dsc.util.date module</a></li>
-<li><a class="reference internal" href="#module-dsc.util">Module contents</a></li>
-</ul>
-</li>
-</ul>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="dsc.html" class="btn btn-neutral float-left" title="dsc package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Ryan Kelley, Randall Kelley.</p>
   </div>
-  <div>
-    <h4>Previous topic</h4>
-    <p class="topless"><a href="dsc.html"
-                          title="previous chapter">dsc package</a></p>
-  </div>
-  <div role="note" aria-label="source link">
-    <h3>This Page</h3>
-    <ul class="this-page-menu">
-      <li><a href="_sources/dsc.util.rst.txt"
-            rel="nofollow">Show Source</a></li>
-    </ul>
-   </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-      <input type="submit" value="Go" />
-    </form>
-    </div>
-</div>
-<script>$('#searchbox').show(0);</script>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
         </div>
       </div>
-      <div class="clearer"></div>
-    </div>
-    <div class="related" role="navigation" aria-label="related navigation">
-      <h3>Navigation</h3>
-      <ul>
-        <li class="right" style="margin-right: 10px">
-          <a href="genindex.html" title="General Index"
-             >index</a></li>
-        <li class="right" >
-          <a href="py-modindex.html" title="Python Module Index"
-             >modules</a> |</li>
-        <li class="right" >
-          <a href="dsc.html" title="dsc package"
-             >previous</a> |</li>
-        <li class="nav-item nav-item-0"><a href="index.html">Data Science Common https://github.com/kelleyrw/data_science_common documentation</a> &#187;</li>
-          <li class="nav-item nav-item-1"><a href="modules.html" >dsc</a> &#187;</li>
-          <li class="nav-item nav-item-2"><a href="dsc.html" >dsc package</a> &#187;</li>
-        <li class="nav-item nav-item-this"><a href="">dsc.util package</a></li> 
-      </ul>
-    </div>
-    <div class="footer" role="contentinfo">
-        &#169; Copyright 2022, Ryan Kelley, Randall Kelley.
-      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 4.4.0.
-    </div>
-  </body>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
 </html>

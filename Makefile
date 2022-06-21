@@ -41,9 +41,16 @@ test: black isort mypy pytest
 
 build-docs:
 	pushd $$PROJECT_DIR/docs &&\
-		sphinx-apidoc -f -o source/ ../dsc &&\
+		sphinx-apidoc -f -E -o source/ ../dsc &&\
 		make html &&\
 		popd
+
+clean-docs:
+	pushd $$PROJECT_DIR/docs &&\
+		make clean &&\
+		popd
+
+rebuild-docs: clean-docs build-docs
 
 # ---------------------------------------------------------------------------- #
 # release
@@ -56,8 +63,8 @@ clean-dist:
 build-dist: clean-dist
 	python -m build
 
-deploy-test-pypi: build-dist
+deploy-test-pypi: build-dist build-docs
 	twine upload --verbose --repository testpypi dist/*
 
-deploy-pypi: build-dist
+deploy-pypi: build-dist build-docs
 	twine upload --verbose dist/*

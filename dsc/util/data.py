@@ -16,18 +16,15 @@ def list_contains_type(
     Determine if a list contains the given type.
 
     Args:
-        values (): list or numpy array to test
-        test_type (): python type to test
-        require_non_empty ():
-            True: empty list returns False
-            False: empty list returns True (default)
+        values: list or numpy array to test
+        test_type: python type to test
+        require_non_empty: True: empty list returns False, False: empty list returns True (default)
 
     Returns:
         boolean
     """
 
-    if isinstance(values, numpy.ndarray):
-        values = values.tolist()
+    values = list(values)
 
     result = isinstance(values, Iterable) and all(
         isinstance(i, test_type) for i in values

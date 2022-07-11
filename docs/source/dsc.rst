@@ -9,15 +9,6 @@ Subpackages
 
    dsc.util
 
-Submodules
-----------
-
-
-.. automodule:: dsc.version
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Module contents
 ---------------
 

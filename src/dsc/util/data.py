@@ -1,5 +1,7 @@
+# Standard library imports
 from typing import Any, Iterable
 
+# Third party imports
 import numpy
 
 # fmt: off

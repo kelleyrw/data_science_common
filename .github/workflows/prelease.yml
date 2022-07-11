@@ -54,5 +54,4 @@ jobs:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.TEST_PYPI_TOKEN }}
         run: |
-          make build-dist
-          twine upload --verbose --repository testpypi dist/*
+          make deploy-test-pypi  

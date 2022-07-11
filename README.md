@@ -39,6 +39,10 @@ make install
 
 ## Release History
 
+* 0.1.7
+  * refactored code layout and updated build to pyproject.toml paradigm 
+* 0.1.6
+  * updating documentation and deployment infrastructure
 * 0.1.5
   * CHANGE: added package `dsc.util.date` 
   * CHANGE: added package `dsc.util.db`

@@ -1,8 +1,11 @@
+# Standard library imports
 import datetime as dt
 from typing import List, Union
 
+# Third party imports
 import pandas as pd
 
+# DSC imports
 from dsc.util.error import InvalidArgumentError
 
 # fmt: off

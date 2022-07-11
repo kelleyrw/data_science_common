@@ -1,10 +1,13 @@
-from typing import Dict, Optional, Union
+# Standard library imports
+from typing import Any, Dict, Optional, Union
 
+# Third party imports
 import pandas as pd
 import sqlparse
 from sqlalchemy.engine import Engine
 from sqlalchemy.sql import Selectable
 
+# DSC imports
 from dsc.util.pd import print_dataframe
 
 # fmt: off
@@ -42,7 +45,7 @@ class RunQuery(object):
     def __call__(
         self,
         query: Union[str, Selectable],
-        parameters: Optional[Dict] = None,
+        parameters: Optional[Dict[Any, Any]] = None,
         verbose: bool = False,
         display: bool = False,
     ) -> pd.DataFrame:
@@ -78,8 +81,10 @@ class RunQuery(object):
                     print(query)
             df = pd.read_sql_query(sql=query, con=self.engine, params=parameters)
             if display:
+                # Standard library imports
                 import sys
 
+                # Third party imports
                 from IPython.display import display as ipy_display
 
                 if "ipykernel" in sys.modules:

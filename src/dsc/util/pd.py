@@ -1,5 +1,7 @@
+# Standard library imports
 from typing import Optional
 
+# Third party imports
 import pandas as pd
 from tabulate import tabulate
 

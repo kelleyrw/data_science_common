@@ -1,5 +1,7 @@
+# Third party imports
 from sqlalchemy import create_engine
 
+# DSC imports
 from dsc.util.db import RunQuery
 from dsc.util.pd import print_dataframe
 

@@ -46,42 +46,6 @@ Submodules
    :undoc-members:
    :show-inheritance:
 
-
-.. automodule:: dsc.util.test_data
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-.. automodule:: dsc.util.test_date
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-.. automodule:: dsc.util.test_db
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-.. automodule:: dsc.util.test_obj
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-.. automodule:: dsc.util.test_pd
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-
-.. automodule:: dsc.util.test_str
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
 Module contents
 ---------------
 

@@ -1,5 +1,7 @@
+# Standard library imports
 from typing import Any, List, Optional
 
+# DSC imports
 from dsc.util.data import list_contains_type
 
 # fmt: off

@@ -1,6 +1,8 @@
+# Standard library imports
 import unittest
 
-from .obj import StructLikeREPR, classproperty
+# DSC imports
+from dsc.util.obj import StructLikeREPR, classproperty
 
 
 class TestObj(unittest.TestCase):

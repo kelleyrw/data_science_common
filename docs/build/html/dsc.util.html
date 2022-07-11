@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>dsc.util package &mdash; Data Science Common https://github.com/kelleyrw/data_science_common documentation</title>
+  <title>dsc.util package &mdash; Data Science Common 0.1.5 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -14,6 +14,7 @@
         <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
         <script src="_static/jquery.js"></script>
         <script src="_static/underscore.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
         <script src="_static/doctools.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
@@ -29,7 +30,7 @@
             <a href="index.html" class="icon icon-home"> Data Science Common
           </a>
               <div class="version">
-                0.1.5.dev1
+                0.1.5
               </div>
 <div role="search">
   <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
@@ -47,7 +48,6 @@
 <li class="toctree-l4 current"><a class="current reference internal" href="#">dsc.util package</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="dsc.html#module-dsc.version">Submodules</a></li>
 <li class="toctree-l3"><a class="reference internal" href="dsc.html#module-dsc">Module contents</a></li>
 </ul>
 </li>
@@ -82,9 +82,9 @@
            <div itemprop="articleBody">
              
   <section id="dsc-util-package">
-<h1>dsc.util package<a class="headerlink" href="#dsc-util-package" title="Permalink to this headline"></a></h1>
+<h1>dsc.util package<a class="headerlink" href="#dsc-util-package" title="Permalink to this heading"></a></h1>
 <section id="module-dsc.util.data">
-<span id="submodules"></span><h2>Submodules<a class="headerlink" href="#module-dsc.util.data" title="Permalink to this headline"></a></h2>
+<span id="submodules"></span><h2>Submodules<a class="headerlink" href="#module-dsc.util.data" title="Permalink to this heading"></a></h2>
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.data.list_contains_type">
 <span class="sig-prename descclassname"><span class="pre">dsc.util.data.</span></span><span class="sig-name descname"><span class="pre">list_contains_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">values</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Iterable</span><span class="p"><span class="pre">[</span></span><span class="pre">Any</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">test_type</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">require_non_empty</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">bool</span></span></span><a class="headerlink" href="#dsc.util.data.list_contains_type" title="Permalink to this definition"></a></dt>
@@ -105,7 +105,7 @@
 
 <span class="target" id="module-dsc.util.date"></span><dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.date_range">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'D'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">datetime.date</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.date.date_range" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">begin_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_date</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">freq</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'D'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">List</span><span class="p"><span class="pre">[</span></span><span class="pre">date</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.date.date_range" title="Permalink to this definition"></a></dt>
 <dd><p>Create a list of dates between begin and end dates.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -123,7 +123,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.date_to_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.datetime</span></span></span><a class="headerlink" href="#dsc.util.date.date_to_datetime" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime</span></span></span><a class="headerlink" href="#dsc.util.date.date_to_datetime" title="Permalink to this definition"></a></dt>
 <dd><p>Convert a date object to a datetime object.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -137,7 +137,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.date_to_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.date_to_str" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">date_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">date</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.date_to_str" title="Permalink to this definition"></a></dt>
 <dd><p>Convert a date object to a string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -154,7 +154,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.datetime_to_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">datetime_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime.datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.datetime_to_str" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">datetime_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">d</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">datetime</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.datetime_to_str" title="Permalink to this definition"></a></dt>
 <dd><p>Convert a datetime object to a string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -205,7 +205,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.str_to_date">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">str_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.date</span></span></span><a class="headerlink" href="#dsc.util.date.str_to_date" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">str_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="headerlink" href="#dsc.util.date.str_to_date" title="Permalink to this definition"></a></dt>
 <dd><p>Convert a string object to a date.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -222,7 +222,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.str_to_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">str_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.datetime</span></span></span><a class="headerlink" href="#dsc.util.date.str_to_datetime" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">str_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">s</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime</span></span></span><a class="headerlink" href="#dsc.util.date.str_to_datetime" title="Permalink to this definition"></a></dt>
 <dd><p>Convert a string object to a datetime.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -239,7 +239,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.to_date">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.date</span></span></span><a class="headerlink" href="#dsc.util.date.to_date" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="headerlink" href="#dsc.util.date.to_date" title="Permalink to this definition"></a></dt>
 <dd><p>Cast an object is a date.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -256,7 +256,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.to_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">pandas._libs.tslibs.timestamps.Timestamp</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">datetime.date</span></span></span><a class="headerlink" href="#dsc.util.date.to_datetime" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">Timestamp</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d</span> <span class="pre">%H:%M:%S'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">date</span></span></span><a class="headerlink" href="#dsc.util.date.to_datetime" title="Permalink to this definition"></a></dt>
 <dd><p>Cast an object is a datetime.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -273,7 +273,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.date.to_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime.datetime</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.to_str" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.date.</span></span><span class="sig-name descname"><span class="pre">to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">v</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Union</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">date</span><span class="p"><span class="pre">,</span></span><span class="w"> </span><span class="pre">datetime</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">fmt</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'%Y-%m-%d'</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">str</span></span></span><a class="headerlink" href="#dsc.util.date.to_str" title="Permalink to this definition"></a></dt>
 <dd><p>Cast an object is a string.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -290,7 +290,7 @@
 
 <span class="target" id="module-dsc.util.db"></span><dl class="py class">
 <dt class="sig sig-object py" id="dsc.util.db.RunQuery">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.db.</span></span><span class="sig-name descname"><span class="pre">RunQuery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">sqlalchemy.engine.base.Engine</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.db.RunQuery" title="Permalink to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.db.</span></span><span class="sig-name descname"><span class="pre">RunQuery</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">engine</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Engine</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.db.RunQuery" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <blockquote>
 <div><p>Wrapper to run a SQL from pandas so that the engine is encapsulated.</p>
@@ -332,6 +332,8 @@
 <dt class="sig sig-object py" id="dsc.util.obj.StructLikeREPR">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.obj.</span></span><span class="sig-name descname"><span class="pre">StructLikeREPR</span></span><a class="headerlink" href="#dsc.util.obj.StructLikeREPR" title="Permalink to this definition"></a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<p>”
+Todo: add docs</p>
 </dd></dl>
 
 <dl class="py function">
@@ -342,7 +344,7 @@
 
 <span class="target" id="module-dsc.util.pd"></span><dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.pd.print_dataframe">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.pd.</span></span><span class="sig-name descname"><span class="pre">print_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#dsc.util.pd.print_dataframe" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.pd.</span></span><span class="sig-name descname"><span class="pre">print_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">None</span></span></span><a class="headerlink" href="#dsc.util.pd.print_dataframe" title="Permalink to this definition"></a></dt>
 <dd><p>Prints a nicely formatted table for a pandas dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -356,7 +358,7 @@
 
 <dl class="py function">
 <dt class="sig sig-object py" id="dsc.util.pd.tabulate_dataframe">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.pd.</span></span><span class="sig-name descname"><span class="pre">tabulate_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">pandas.core.frame.DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.pd.tabulate_dataframe" title="Permalink to this definition"></a></dt>
+<span class="sig-prename descclassname"><span class="pre">dsc.util.pd.</span></span><span class="sig-name descname"><span class="pre">tabulate_dataframe</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">DataFrame</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">nrows</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span> <span class="sig-return"><span class="sig-return-icon">&#x2192;</span> <span class="sig-return-typehint"><span class="pre">Optional</span><span class="p"><span class="pre">[</span></span><span class="pre">str</span><span class="p"><span class="pre">]</span></span></span></span><a class="headerlink" href="#dsc.util.pd.tabulate_dataframe" title="Permalink to this definition"></a></dt>
 <dd><p>Creates a nicely formatted string/tables for a pandas dataframe</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters</dt>
@@ -489,140 +491,9 @@ e.g. [‘foo’, ‘bar’] -&gt; “(‘foo’, ‘bar’)”</p>
 </dl>
 </dd></dl>
 
-<span class="target" id="module-dsc.util.test_data"></span><dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_data.test_list_contains_type">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_data.</span></span><span class="sig-name descname"><span class="pre">test_list_contains_type</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_data.test_list_contains_type" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<span class="target" id="module-dsc.util.test_date"></span><dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.pset">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">pset</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.pset" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_date_range">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_date_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_date_range" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_date_to_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_date_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_date_to_datetime" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_date_to_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_date_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_date_to_str" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_datetime_to_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_datetime_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_datetime_to_str" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_is_valid_date">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_is_valid_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_is_valid_date" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_is_valid_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_is_valid_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_is_valid_datetime" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_str_to_date">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_str_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_str_to_date" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_str_to_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_str_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_str_to_datetime" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_to_date">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_to_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_to_date" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_to_datetime">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_to_datetime</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_to_datetime" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_date.test_to_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_date.</span></span><span class="sig-name descname"><span class="pre">test_to_str</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pset</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_date.test_to_str" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<span class="target" id="module-dsc.util.test_db"></span><dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_db.test_RunQuery">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_db.</span></span><span class="sig-name descname"><span class="pre">test_RunQuery</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_db.test_RunQuery" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<span class="target" id="module-dsc.util.test_obj"></span><dl class="py class">
-<dt class="sig sig-object py" id="dsc.util.test_obj.TestObj">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">dsc.util.test_obj.</span></span><span class="sig-name descname"><span class="pre">TestObj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">methodName</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'runTest'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_obj.TestObj" title="Permalink to this definition"></a></dt>
-<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">unittest.case.TestCase</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="dsc.util.test_obj.TestObj.test_StructLikeREPR">
-<span class="sig-name descname"><span class="pre">test_StructLikeREPR</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_obj.TestObj.test_StructLikeREPR" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-</dd></dl>
-
-<span class="target" id="module-dsc.util.test_pd"></span><dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_pd.test_print_dataframe">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_pd.</span></span><span class="sig-name descname"><span class="pre">test_print_dataframe</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_pd.test_print_dataframe" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_pd.test_tabluate">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_pd.</span></span><span class="sig-name descname"><span class="pre">test_tabluate</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_pd.test_tabluate" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<span class="target" id="module-dsc.util.test_str"></span><dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_bool_or_none">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_bool_or_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_bool_or_none" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_empty_to_none">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_empty_to_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_empty_to_none" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_int_or_none">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_int_or_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_int_or_none" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_is_empty">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_is_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_is_empty" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_is_not_empty">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_is_not_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_is_not_empty" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_list_to_sql_str">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_list_to_sql_str</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_list_to_sql_str" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_strip_newline">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_strip_newline</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_strip_newline" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="dsc.util.test_str.test_zeros_to_none">
-<span class="sig-prename descclassname"><span class="pre">dsc.util.test_str.</span></span><span class="sig-name descname"><span class="pre">test_zeros_to_none</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#dsc.util.test_str.test_zeros_to_none" title="Permalink to this definition"></a></dt>
-<dd></dd></dl>
-
 </section>
 <section id="module-dsc.util">
-<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dsc.util" title="Permalink to this headline"></a></h2>
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-dsc.util" title="Permalink to this heading"></a></h2>
 </section>
 </section>
 

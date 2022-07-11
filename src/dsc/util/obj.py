@@ -1,3 +1,7 @@
+# Standard library imports
+import typing
+from typing import Any, Callable, Optional
+
 __all__ = [
     "StructLikeREPR",
     "classproperty",
@@ -5,21 +9,25 @@ __all__ = [
 
 
 class ClassPropertyDescriptor(object):
+    @typing.no_type_check  # todo: remove this
     def __init__(self, fget, fset=None):
         self.fget = fget
         self.fset = fset
 
+    @typing.no_type_check  # todo: remove this
     def __get__(self, obj, klass=None):
         if klass is None:
             klass = type(obj)
         return self.fget.__get__(obj, klass)()
 
+    @typing.no_type_check  # todo: remove this
     def __set__(self, obj, value):
         if not self.fset:
             raise AttributeError("can't set attribute")
         type_ = type(obj)
         return self.fset.__get__(obj, type_)(value)
 
+    @typing.no_type_check  # todo: remove this
     def setter(self, func):
         if not isinstance(func, (classmethod, staticmethod)):
             func = classmethod(func)
@@ -27,6 +35,7 @@ class ClassPropertyDescriptor(object):
         return self
 
 
+@typing.no_type_check  # todo: remove this
 def classproperty(func):
     """
     decorator to define a class level property
@@ -38,6 +47,7 @@ def classproperty(func):
 
 
 class ClassPropertyMetaClass(type):
+    @typing.no_type_check  # todo: remove this
     def __setattr__(self, key, value):
         if key in self.__dict__:
             obj = self.__dict__.get(key)
@@ -49,11 +59,14 @@ class ClassPropertyMetaClass(type):
 
 class MetaStructLikeREPR(ClassPropertyMetaClass):
     @classmethod
+    @typing.no_type_check  # todo: remove this
     def __prepare__(self, name, bases):
+        # Standard library imports
         import collections
 
         return collections.OrderedDict()
 
+    @typing.no_type_check  # todo: remove this
     def __new__(self, name, bases, classdict):
         classdict["__ordered__"] = [
             key
@@ -62,6 +75,7 @@ class MetaStructLikeREPR(ClassPropertyMetaClass):
         ]
         return type.__new__(self, name, bases, classdict)
 
+    @typing.no_type_check  # todo: remove this
     def __unicode__(cls):
 
         atts = cls.__ordered__
@@ -79,12 +93,18 @@ class MetaStructLikeREPR(ClassPropertyMetaClass):
         result += ")"
         return str(result)
 
+    @typing.no_type_check  # todo: remove this
     def __str__(cls):
         return cls.__unicode__()
 
+    @typing.no_type_check  # todo: remove this
     def __repr__(cls):
         return cls.__unicode__()
 
 
 class StructLikeREPR(metaclass=MetaStructLikeREPR):
+    """ "
+    Todo: add docs
+    """
+
     pass

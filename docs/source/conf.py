@@ -10,12 +10,14 @@
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
 
+# Standard library imports
 import datetime
 import os
 import sys
 
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), "../.."))
-import dsc
+# Reader imports
+from src import dsc
 
 # -- Project information -----------------------------------------------------
 
@@ -27,7 +29,9 @@ this_year = datetime.date.today().year
 copyright = "%s, %s" % (this_year, author)
 
 # The full version, including alpha/beta/rc tags
-release = "https://github.com/kelleyrw/data_science_common"
+releases_release_uri = (
+    f"https://github.com/LiveRamp/lr-research-core/releases/tag/{version}"
+)
 
 # -- General configuration ---------------------------------------------------
 

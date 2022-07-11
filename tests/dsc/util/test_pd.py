@@ -1,5 +1,7 @@
+# Third party imports
 import pandas as pd
 
+# DSC imports
 from dsc.util.pd import print_dataframe, tabulate_dataframe
 
 

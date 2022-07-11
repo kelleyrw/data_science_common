@@ -32,8 +32,8 @@ dependencies = [
 requires-python = ">=3.8"
 
     [project.optional-dependencies]
-    build = ["build", "twine"]
-    dev   = ["black", "flake8", "bumpver", "isort", "mypy", "pytest", "pip-tools", "sphinx_rtd_theme"]
+    build = ["setuptools", "wheel", "twine", "build", "sphinx", "sphinx_rtd_theme"]
+    dev   = ["black", "flake8", "bumpver", "isort", "mypy", "pytest", "pip-tools", "sphinx", "sphinx_rtd_theme"]
 
     #[project.scripts]
     #scriptname = "dsc.__main__:main"

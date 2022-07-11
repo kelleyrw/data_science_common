@@ -75,7 +75,7 @@ build-dist: clean-dist   ## distribution build
 deploy-check:  ## pypi deployment check
 	twine check dist/*
 
-deploy-test-pypi: deploy-check build-dist build-docs
+deploy-test-pypi: build-dist build-docs deploy-check
 	twine upload --verbose --skip-existing --repository testpypi dist/*
 
 deploy-pypi: deploy-check build-dist build-docs

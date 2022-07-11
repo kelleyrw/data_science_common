@@ -49,15 +49,15 @@ test: black isort mypy pytest  ## run all tests
 # ---------------------------------------------------------------------------- #
 
 build-docs:  ## build the documentation via sphinx
-	pushd $$PROJECT_DIR/docs &&\
+	cd $$PROJECT_DIR/docs &&\
 		sphinx-apidoc -f -E -o source/ ../src/dsc &&\
 		make html &&\
-		popd
+		cd -
 
 clean-docs:  ## remove the documentation
-	pushd $$PROJECT_DIR/docs &&\
+	cd $$PROJECT_DIR/docs &&\
 		make clean &&\
-		popd
+		cd -
 
 rebuild-docs: clean-docs build-docs  ## rebuild (i.e. clean and build) all documentation via sphinx
 

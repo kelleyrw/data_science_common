@@ -32,7 +32,7 @@ dependencies = [
 requires-python = ">=3.8"
 
     [project.optional-dependencies]
-    build = ["setuptools", "wheel", "twine", "build", "sphinx", "sphinx_rtd_theme"]
+    build = ["setuptools", "wheel", "twine", "build", "sphinx", "sphinx_rtd_theme", "sphinx-pyproject"]
     dev   = ["black", "flake8", "bumpver", "isort", "mypy", "pytest", "pip-tools", "sphinx", "sphinx_rtd_theme"]
 
     #[project.scripts]
@@ -40,7 +40,7 @@ requires-python = ">=3.8"
 
     [project.urls]
     repository    = "https://github.com/kelleyrw/data_science_common"
-    documentation = "https://raw.githubusercontent.com/kelleyrw/data_science_common/docs/build/html/index.html"
+    documentation = "https://kelleyrw.github.io/data_science_common/docs/build/html/index.html"
 
 
 [tool.bumpver]

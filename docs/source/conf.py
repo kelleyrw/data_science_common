@@ -31,7 +31,7 @@ copyright = "%s, %s" % (this_year, author)
 
 # The full version, including alpha/beta/rc tags
 releases_release_uri = (
-    f"https://github.com/LiveRamp/lr-research-core/releases/tag/{version}"
+    f"https://github.com/kelleyrw/data_science_common/releases/tag/{version}"
 )
 
 # -- General configuration ---------------------------------------------------

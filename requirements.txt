@@ -1,0 +1,8 @@
+pandas
+sqlparse
+SQLAlchemy
+stringcase
+tabulate
+numpy
+pytest
+setuptools

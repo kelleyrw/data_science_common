@@ -6,3 +6,9 @@ tabulate
 numpy
 pytest
 setuptools
+google-cloud-bigquery
+pybigquery
+pandas-gbq
+gcsfs
+python-dotenv
+tqdm

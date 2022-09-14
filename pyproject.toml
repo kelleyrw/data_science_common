@@ -29,12 +29,17 @@ dependencies = [
     "matplotlib",
     "ipython",
     "stringcase",
+    "google-cloud-bigquery",
+    "pandas-gbq",
+    "gcsfs",
+    "pybigquery",
+    "tqdm",
 ]
 requires-python = ">=3.8"
 
     [project.optional-dependencies]
     build = ["setuptools", "wheel", "twine", "build", "sphinx", "sphinx_rtd_theme", "sphinx-pyproject"]
-    dev   = ["black", "flake8", "bumpver", "isort", "mypy", "pytest", "pip-tools", "sphinx", "sphinx_rtd_theme"]
+    dev   = ["black", "flake8", "bumpver", "isort", "mypy", "pytest", "pip-tools", "sphinx", "sphinx_rtd_theme", " python-dotenv"]
 
     #[project.scripts]
     #scriptname = "dsc.__main__:main"

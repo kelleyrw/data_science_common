@@ -3,6 +3,7 @@ from typing import Optional
 
 # Third party imports
 import pandas as pd
+from stringcase import snakecase
 from tabulate import tabulate
 
 # fmt: off
@@ -18,8 +19,8 @@ def tabulate_dataframe(df: pd.DataFrame, nrows: Optional[int] = None) -> Optiona
     Creates a nicely formatted string/tables for a pandas dataframe
 
     Args:
-        df (DataFrame):  the dataframe to print
-        nrows (Optional[int]): the number of rows to display
+        df:  the dataframe to print
+        nrows: the number of rows to display
     Returns:
         formatted dataframe sting-based output
     """
@@ -35,8 +36,25 @@ def print_dataframe(df: pd.DataFrame, nrows: Optional[int] = None) -> None:
     Prints a nicely formatted table for a pandas dataframe
 
     Args:
-        df (DataFrame):  the dataframe to print
-        nrows (Optional[int]): the number of rows to display
+        df:  the dataframe to print
+        nrows: the number of rows to display
     """
 
     print(tabulate_dataframe(df, nrows=nrows))
+
+
+def columns_to_snakecase(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Convert the columns of the dataframe to snake case.
+
+    Args:
+        df:  the dataframe to convert
+    Returns:
+        dataframe snakecase columns
+    """
+    columns = [
+        snakecase(c).replace("(", "").replace(")", "").replace("__", "_")
+        for c in df.columns
+    ]
+    df.columns = columns
+    return df

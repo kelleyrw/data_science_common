@@ -1,6 +1,6 @@
 """Data Science Common
 """
-__version__ = "0.1.17"
+__version__ = "0.1.18"
 
 
 def get_version() -> str:

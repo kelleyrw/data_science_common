@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "data-science-common"
-version = "0.1.18"
+version = "0.1.19"
 description = "UNDER CONSTRUCTION: A simple python library to facilitate analysis"
 readme = "README.md"
 authors = [{ name = "Ryan Kelley", email = "kelleyrw@gmail.com" }, { name = "Randall Kelley", email = "randall.s.kelley@gmail.com" }]
@@ -51,7 +51,7 @@ requires-python = ">=3.8"
 
 
 [tool.bumpver]
-current_version = "0.1.18"
+current_version = "0.1.19"
 version_pattern = "MAJOR.MINOR.PATCH"
 commit_message  = "bump version {old_version} -> {new_version}"
 commit          = true

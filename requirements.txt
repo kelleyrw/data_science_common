@@ -1,6 +1,7 @@
+pyarrow<=10.0.1
 pandas
 sqlparse
-SQLAlchemy
+SQLAlchemy<=1.4.46
 stringcase
 tabulate
 numpy

@@ -20,7 +20,7 @@ only_if_credentials_available = unittest.skipIf(
 
 
 # TODO: add credentials for CI/CD
-class TestStr(unittest.TestCase):
+class TestBigQuery(unittest.TestCase):
     project = getenv("GCP_TEST_PROJECT")
     dataset = getenv("GCP_TEST_DATASET")
 

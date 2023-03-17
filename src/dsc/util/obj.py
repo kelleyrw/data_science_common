@@ -1,6 +1,5 @@
 # Standard library imports
 import typing
-from typing import Any, Callable, Optional
 
 __all__ = [
     "StructLikeREPR",
@@ -77,7 +76,6 @@ class MetaStructLikeREPR(ClassPropertyMetaClass):
 
     @typing.no_type_check  # todo: remove this
     def __unicode__(cls):
-
         atts = cls.__ordered__
         result = f"{cls.__name__}("
         if len(atts) > 3:

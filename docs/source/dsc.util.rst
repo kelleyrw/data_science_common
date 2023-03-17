@@ -41,6 +41,12 @@ Submodules
    :show-inheritance:
 
 
+.. automodule:: dsc.util.sqlalchemy
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+
 .. automodule:: dsc.util.str
    :members:
    :undoc-members:

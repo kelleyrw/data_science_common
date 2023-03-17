@@ -31,6 +31,7 @@ dependencies = [
     "stringcase",
     "google-cloud-bigquery",
     "pandas-gbq",
+    "grpcio<=1.48",
     "gcsfs",
     "pybigquery",
     "tqdm",

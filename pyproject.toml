@@ -23,7 +23,7 @@ keywords = ["data science", "analysis"]
 dependencies = [
     "sphinx",
     "pandas",
-    "SQLAlchemy",
+    "SQLAlchemy<=2.0",
     "tabulate",
     "types-tabulate",
     "sqlparse",
@@ -32,7 +32,7 @@ dependencies = [
     "stringcase",
     "google-cloud-bigquery",
     "pandas-gbq",
-    "grpcio<=1.48",
+    "grpcio",
     "gcsfs",
     "pybigquery",
     "tqdm",

@@ -16,8 +16,10 @@ def test_print_dataframe() -> None:
 
 
 def test_columns_to_snakecase() -> None:
-    df = pd.DataFrame(data={"FooBar1": [1, 2], "Foo_Bar (Two)": [3, 4]})
-    expected = ["foo_bar1", "foo_bar_two"]
+    df = pd.DataFrame(
+        data={"FooBar1": [1, 2], "Foo_Bar (Two)": [3, 4], "FOO BAR 3": [3, 4]}
+    )
+    expected = ["foo_bar1", "foo_bar_two", "foo_bar_3"]
     print_dataframe(df)
     df = columns_to_snakecase(df)
     print_dataframe(df)

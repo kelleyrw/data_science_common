@@ -1,15 +1,16 @@
 # Standard library imports
+import re
 from typing import Optional
 
 # Third party imports
+import inflection
 import pandas as pd
-from stringcase import snakecase
 from tabulate import tabulate
 
 # fmt: off
 __all__ = [
-    "tabulate_dataframe",
-    "print_dataframe",
+    'tabulate_dataframe',
+    'print_dataframe',
 ]
 # fmt: on
 
@@ -52,9 +53,14 @@ def columns_to_snakecase(df: pd.DataFrame) -> pd.DataFrame:
     Returns:
         dataframe snakecase columns
     """
-    columns = [
-        snakecase(c).replace("(", "").replace(")", "").replace("__", "_")
-        for c in df.columns
-    ]
+
+    def replace(c: str) -> str:
+        result = inflection.underscore(c)
+        result = re.sub(r"\W+", "_", result)
+        result = re.sub(r"\s+", "_", result)
+        result = re.sub(r"(^_)|(_$)", "", result)
+        return result
+
+    columns = [replace(c) for c in df.columns]
     df.columns = columns
     return df

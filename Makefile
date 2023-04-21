@@ -2,10 +2,10 @@
 
 # ---------------------------------------------------------------------------- #
 
-#python_version = 3.10.5
-#python_env = dsc3105
-python_version = 3.7.16
-python_env = dsc3716
+python_version = 3.11.3
+python_env = dsc3113
+#python_version = 3.7.16
+#python_env = dsc3716
 package_name = data_science_common
 dsc_version=$$(python -c "import dsc; print(dsc.get_version())")
 

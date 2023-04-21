@@ -13,3 +13,4 @@ pandas-gbq
 gcsfs
 python-dotenv
 tqdm
+inflection
